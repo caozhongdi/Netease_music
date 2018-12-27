@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.netease_music.MainActivity"
+    android:background="#000033"
+    >
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toobar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    ></android.support.v7.widget.Toolbar>
+    <com.oragee.banners.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_below="@+id/toobar"
+        ></com.oragee.banners.BannerView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="770dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/banner"
+        />
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#000033"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/item_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="告白气球   "
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+
+            android:background="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/item_music_title"
+            />
+        <TextView
+            android:id="@+id/item_music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_centerVertical="true"
+            android:text="  周杰伦"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="列表循环"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            />
+<ImageView
+    android:id="@+id/img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/e"
+    android:layout_toLeftOf="@+id/t1"
+    android:layout_centerVertical="true"
+
+    android:layout_marginRight="20dp"
+    android:onClick="onClick"
+    />
+
+        <SeekBar
+            android:id="@+id/playSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5px" />
+    </RelativeLayout>
+</RelativeLayout>

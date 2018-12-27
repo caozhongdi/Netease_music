@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rv"
+    android:background="#000033"
+    android:layout_height="110dp">
+
+    <TextView
+        android:id="@+id/item_music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="告白气球"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/item_music_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_music_title"
+        android:layout_alignStart="@+id/item_music_title"
+        android:layout_below="@+id/item_music_title"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="周杰伦"
+        android:textSize="16sp"/>
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/item_music_singer"
+        android:layout_alignBottom="@+id/item_music_singer"
+        android:layout_marginLeft="10dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/item_music_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv1"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv1"
+        android:textSize="16sp"
+        android:text="电影插曲" />
+
+    <TextView
+        android:id="@+id/item_music_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_music_album"
+        android:textColor="#ffffff"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:text="04:23" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/item_music_time"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
