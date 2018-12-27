@@ -39,6 +39,9 @@ public class f1 extends Fragment{
             ImageView imageView = new ImageView(getContext());
             imageView.setBackgroundResource(ints[i]);
             list.add(imageView);
+
+
+
         }
         banner.setViewList(list);
         banner.startLoop(true);
